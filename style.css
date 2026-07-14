@@ -1,0 +1,488 @@
+/* ================================
+   BASIC RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f2eb;
+    color: #1d1d1d;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+header {
+    width: 100%;
+    background-color: #f5f2eb;
+}
+
+nav {
+    height: 90px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 264px;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1d1d1d;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+
+/* Navbar underline animation */
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #1d1d1d;
+
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+    min-height: calc(100vh - 90px);
+    max-width: 1500px;
+
+    margin: auto;
+    padding: 50px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* ================================
+   HERO CONTENT
+================================ */
+
+.hero-content {
+    width: 700px;
+
+    text-align: center;
+
+    position: relative;
+    z-index: 5;
+}
+
+.hero-tagline {
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+
+    color: #6d6d6d;
+}
+
+
+/* Main Heading */
+
+.quote {
+    font-size: clamp(45px, 6vw, 90px);
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+
+    font-weight: 700;
+
+    margin-bottom: 30px;
+}
+
+
+/* Small heading under quote */
+
+.hero-content h3 {
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    font-weight: 500;
+
+    color: #555;
+
+    margin-bottom: 35px;
+}
+
+
+/* ================================
+   HERO BUTTON
+================================ */
+
+.hero-content button {
+    border: none;
+    background: none;
+}
+
+.hero-content button a {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background-color: #1d1d1d;
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease;
+}
+
+.hero-content button a:hover {
+    background-color: #9b8265;
+
+    transform: translateY(-3px);
+}
+
+
+/* ================================
+   HERO PROJECT IMAGES
+================================ */
+
+.hero-image {
+    position: absolute;
+
+    z-index: 2;
+
+    padding: 7px;
+
+    background-color: white;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+
+    transition: transform 0.4s ease;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* First Image */
+
+.hero>.hero-image:nth-of-type(1) {
+    width: 250px;
+    height: 320px;
+
+    top: 50px;
+    left: 40px;
+
+    transform: rotate(-6deg);
+}
+
+
+/* Second Image */
+
+.hero>.hero-image:nth-of-type(3) {
+    width: 260px;
+    height: 200px;
+
+    top: 70px;
+    right: 40px;
+
+    transform: rotate(5deg);
+}
+
+
+/* Third Image */
+
+.hero>.hero-image:nth-of-type(4) {
+    width: 280px;
+    height: 210px;
+
+    bottom: 40px;
+    right: 75px;
+
+    transform: rotate(-4deg);
+}
+
+
+/* Image hover effect */
+
+.hero>.hero-image:nth-of-type(1):hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.hero>.hero-image:nth-of-type(3):hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.hero>.hero-image:nth-of-type(4):hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+
+/* ================================
+   ABOUT SECTION
+================================ */
+
+.about {
+    max-width: 1400px;
+
+    margin: auto;
+    padding: 120px 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 80px;
+
+    background-color: #1d1d1d;
+    color: white;
+}
+
+
+/* About Text */
+
+.box1 {
+    width: 50%;
+}
+
+.box1 h3 {
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #b5a48d;
+
+    margin-bottom: 20px;
+}
+
+.box1 h2 {
+    font-size: 50px;
+
+    font-weight: 500;
+
+    margin-bottom: 30px;
+}
+
+.box1 p {
+    max-width: 550px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #cfcfcf;
+}
+
+
+/* About Image */
+
+.box2 {
+    width: 45%;
+}
+
+.box2 img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 900px) {
+
+    nav {
+        padding: 0 25px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: auto;
+
+        padding: 100px 25px;
+
+        flex-direction: column;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .quote {
+        font-size: 50px;
+    }
+
+
+    /* Hide floating images on smaller screens
+       for now. We can redesign mobile version later.
+    */
+
+    .hero-image {
+        display: none;
+    }
+
+
+    /* About */
+
+    .about {
+        padding: 80px 30px;
+
+        flex-direction: column;
+
+        gap: 50px;
+    }
+
+    .box1,
+    .box2 {
+        width: 100%;
+    }
+
+    .box1 h2 {
+        font-size: 40px;
+    }
+
+    .box2 img {
+        height: 400px;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    nav {
+        height: 75px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero-tagline {
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+    .quote {
+        font-size: 40px;
+
+        letter-spacing: -1px;
+    }
+
+    .hero-content h3 {
+        font-size: 11px;
+
+        line-height: 1.7;
+    }
+
+
+    /* About */
+
+    .about {
+        padding: 60px 20px;
+    }
+
+    .box1 h2 {
+        font-size: 32px;
+    }
+
+    .box1 p {
+        font-size: 15px;
+    }
+
+    .box2 img {
+        height: 300px;
+    }
+}
