@@ -486,3 +486,385 @@ nav ul li a:hover::after {
         height: 300px;
     }
 }
+/* ================================
+   SERVICES SECTION
+================================ */
+
+.services {
+    max-width: 1400px;
+    margin: auto;
+    padding: 108px 70px;
+    background-color: #f5f2eb;
+}
+
+
+/* ================================
+   SECTION HEADING
+================================ */
+
+.section-heading {
+    margin-bottom: 70px;
+}
+
+.section-heading p {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #9b8265;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    color: #1d1d1d;
+}
+
+
+/* ================================
+   SERVICES LIST
+================================ */
+
+.services-list {
+    width: 100%;
+    border-top: 1px solid #b8b4ad;
+}
+
+
+/* Individual Service */
+
+.service {
+    min-height: 105px;
+    padding: 30px 20px;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #b8b4ad;
+
+    cursor: pointer;
+
+    transition: all 0.4s ease;
+}
+
+
+/* Service Number */
+
+.service span {
+    width: 120px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #8a8a8a;
+
+    transition: color 0.4s ease;
+}
+
+
+/* Service Name */
+
+.service h3 {
+    font-size: 34px;
+    font-weight: 400;
+
+    letter-spacing: -1px;
+
+    color: #1d1d1d;
+
+    transition: all 0.4s ease;
+}
+
+
+/* ================================
+   HOVER EFFECT
+================================ */
+
+.service:hover {
+    background-color: #1d1d1d;
+    padding-left: 40px;
+}
+
+.service:hover span {
+    color: #b5a48d;
+}
+
+.service:hover h3 {
+    color: white;
+    transform: translateX(20px);
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+    .services {
+        padding: 80px 30px;
+    }
+
+    .section-heading {
+        margin-bottom: 50px;
+    }
+
+    .section-heading h2 {
+        font-size: 45px;
+    }
+
+    .service {
+        min-height: 100px;
+    }
+
+    .service span {
+        width: 80px;
+    }
+
+    .service h3 {
+        font-size: 30px;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .services {
+        padding: 60px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 36px;
+        letter-spacing: -1px;
+    }
+
+    .service {
+        min-height: 85px;
+        padding: 20px 10px;
+    }
+
+    .service span {
+        width: 50px;
+        font-size: 11px;
+    }
+
+    .service h3 {
+        font-size: 23px;
+    }
+
+    .service:hover {
+        padding-left: 20px;
+    }
+
+    .service:hover h3 {
+        transform: translateX(5px);
+    }
+}
+/* ================================
+   FEATURED PROJECTS
+================================ */
+
+.featured-projects {
+    max-width: 1400px;
+    margin: auto;
+    padding: 120px 70px;
+    background-color: #ffffff;
+}
+
+
+/* ================================
+   PROJECTS CONTAINER
+================================ */
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+
+/* ================================
+   INDIVIDUAL PROJECT
+================================ */
+
+.project {
+    width: 70%;
+}
+
+.project-left {
+    align-self: flex-start;
+}
+
+.project-right {
+    align-self: flex-end;
+}
+
+
+/* ================================
+   PROJECT IMAGE
+================================ */
+
+.project-image {
+    width: 100%;
+    height: 550px;
+
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.7s ease;
+}
+
+
+/* Image zoom on hover */
+
+.project:hover .project-image img {
+    transform: scale(1.05);
+}
+
+
+/* ================================
+   PROJECT INFORMATION
+================================ */
+
+.project-info {
+    padding-top: 20px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 30px;
+}
+
+.project-info span {
+    font-size: 12px;
+    color: #999;
+
+    padding-top: 8px;
+}
+
+.project-info h3 {
+    font-size: 30px;
+    font-weight: 500;
+
+    margin-bottom: 7px;
+}
+
+.project-info p {
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    color: #777;
+}
+
+
+/* ================================
+   VIEW ALL PROJECTS BUTTON
+================================ */
+
+.projects-button {
+    margin-top: 100px;
+
+    text-align: center;
+}
+
+.projects-button a {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    border: 1px solid #1d1d1d;
+
+    color: #1d1d1d;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    transition: all 0.3s ease;
+}
+
+.projects-button a:hover {
+    background-color: #1d1d1d;
+    color: white;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+    .featured-projects {
+        padding: 80px 30px;
+    }
+
+    .projects-container {
+        gap: 80px;
+    }
+
+    .project {
+        width: 85%;
+    }
+
+    .project-image {
+        height: 450px;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .featured-projects {
+        padding: 60px 20px;
+    }
+
+    .projects-container {
+        gap: 60px;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project-left,
+    .project-right {
+        align-self: center;
+    }
+
+    .project-image {
+        height: 350px;
+    }
+
+    .project-info h3 {
+        font-size: 24px;
+    }
+
+    .projects-button {
+        margin-top: 70px;
+    }
+}
