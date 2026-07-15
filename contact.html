@@ -118,7 +118,7 @@
             </div>
 
             <!-- Form -->
-            <form class="contact-form">
+            <form class="contact-form" id="contactForm">
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -168,7 +168,7 @@
                     <textarea id="message" name="message" rows="5"
                         placeholder="Tell us a little about your idea..."></textarea>
                 </div>
-                <button type="submit" class="submit-button">
+                <button type="button" class="submit-button" onclick="sendToWhatsapp()">
                     Send Enquiry
                     <span>→</span>
                 </button>
@@ -297,6 +297,60 @@
             <p>Architecture • Interiors • Design</p>
         </div>
     </footer>
+    <script>
+
+        function sendToWhatsapp() {
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const project = document.getElementById("project-type").value;
+            const location = document.getElementById("location").value;
+            const message = document.getElementById("message").value;
+
+
+            if (name === "" || phone === "") {
+                alert("Please fill your Name and Phone Number.");
+                return;
+            }
+
+
+            const text =
+                `Hello Studio SM.AR.T,
+
+I would like to enquire about a project.
+
+-----------------------------------
+
+Name : ${name}
+
+Email : ${email}
+
+Phone : ${phone}
+
+Project Type : ${project}
+
+Location : ${location}
+
+Project Details :
+
+${message}
+
+-----------------------------------
+
+Looking forward to hearing from you.
+
+Thank you!`;
+
+
+            const whatsappURL =
+                `https://wa.me/918791101085?text=${encodeURIComponent(text)}`;
+
+            window.open(whatsappURL, "_blank");
+
+        }
+
+    </script>
 </body>
 
 </html>
