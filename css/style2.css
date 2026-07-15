@@ -80,3 +80,480 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
+
+/* =================================
+   CONTACT HERO
+================================= */
+
+.contact-hero {
+    min-height: 70vh;
+
+    padding: 120px 70px;
+
+    background-color: #f5f2eb;
+    color: #1d1d1d;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Small Label */
+
+.contact-label {
+    margin-bottom: 30px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #9b8265;
+}
+
+
+/* Main Heading */
+
+.contact-hero h1 {
+    max-width: 1100px;
+
+    margin-bottom: 40px;
+
+    font-size: clamp(55px, 7vw, 105px);
+    font-weight: 400;
+
+    line-height: 0.95;
+    letter-spacing: -5px;
+}
+
+
+/* Description */
+
+.contact-intro {
+    max-width: 650px;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    color: #666666;
+}
+/* =================================
+   CONTACT DETAILS
+================================= */
+
+.contact-details {
+    padding: 70px 70px;
+
+    background-color: #ffffff;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 0;
+}
+
+
+/* Individual Contact Box */
+
+.contact-item {
+    min-height: 350px;
+
+    padding: 40px;
+
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Divider Between Boxes */
+
+.contact-item:not(:last-child) {
+    border-right: 1px solid #cccccc;
+}
+
+
+/* Number */
+
+.contact-number {
+    margin-bottom: 50px;
+
+    font-size: 12px;
+
+    color: #999999;
+}
+
+
+/* Title */
+
+.contact-title {
+    margin-bottom: 25px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #9b8265;
+}
+
+
+/* Contact Information */
+
+.contact-item h3 {
+    margin-bottom: 40px;
+
+    font-size: 22px;
+    font-weight: 400;
+
+    line-height: 1.6;
+
+    color: #1d1d1d;
+
+    word-break: break-word;
+}
+
+
+/* Link */
+
+.contact-item a {
+    margin-top: auto;
+
+    width: fit-content;
+
+    color: #1d1d1d;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #1d1d1d;
+
+    padding-bottom: 5px;
+}
+
+
+/* Arrow */
+
+.contact-item a span {
+    margin-left: 8px;
+
+    transition: margin-left 0.3s ease;
+}
+
+.contact-item a:hover span {
+    margin-left: 15px;
+}
+/* =================================
+   WHATSAPP SECTION
+================================= */
+
+.whatsapp-section {
+    min-height: 465px;
+
+    padding: 40px 70px;
+
+    background-color: #1d1d1d;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+
+/* Content */
+
+.whatsapp-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Small Label */
+
+.whatsapp-label {
+    margin-bottom: 30px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #b5a48d;
+}
+
+
+/* Heading */
+
+.whatsapp-content h2 {
+    margin-bottom: 30px;
+
+    font-size: clamp(55px, 7vw, 95px);
+    font-weight: 400;
+
+    line-height: 0.95;
+    letter-spacing: -4px;
+}
+
+
+/* Description */
+
+.whatsapp-description {
+    max-width: 450px;
+
+    margin-bottom: 45px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #aaaaaa;
+}
+
+
+/* WhatsApp Button */
+
+.whatsapp-button {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding-bottom: 8px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #ffffff;
+}
+
+
+/* Button Icon */
+
+.whatsapp-button i {
+    font-size: 22px;
+}
+
+
+/* Arrow */
+
+.whatsapp-button span {
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover span {
+    transform: translateX(8px);
+}
+
+
+/* Huge Decorative WhatsApp Icon */
+
+.whatsapp-big-icon {
+    font-size: clamp(180px, 25vw, 400px);
+
+    color: rgba(255, 255, 255, 0.04);
+
+    transform: rotate(-8deg);
+}
+/* =================================
+   PROJECT ENQUIRY
+================================= */
+
+.project-enquiry {
+    padding: 120px 70px;
+
+    background-color: #f5f2eb;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 120px;
+}
+
+
+/* =================================
+   LEFT SIDE
+================================= */
+
+.enquiry-heading > p:first-child {
+    margin-bottom: 25px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #9b8265;
+}
+
+
+.enquiry-heading h2 {
+    margin-bottom: 35px;
+
+    font-size: clamp(50px, 6vw, 80px);
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: -4px;
+}
+
+
+.enquiry-description {
+    max-width: 400px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #666666;
+}
+
+
+/* =================================
+   FORM
+================================= */
+
+.contact-form {
+    width: 100%;
+}
+
+
+/* Two Fields in One Row */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+
+/* Form Group */
+
+.form-group {
+    margin-bottom: 35px;
+}
+
+
+/* Labels */
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #555555;
+}
+
+
+/* Inputs */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 15px 0;
+
+    background: transparent;
+
+    border: none;
+    border-bottom: 1px solid #999999;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    color: #1d1d1d;
+
+    transition: border-color 0.3s ease;
+}
+
+
+/* Input Focus */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-bottom-color: #1d1d1d;
+}
+
+
+/* Textarea */
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* Submit Button */
+
+.submit-button {
+    margin-top: 20px;
+
+    padding: 16px 28px;
+
+    background-color: #1d1d1d;
+
+    border: 1px solid #1d1d1d;
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Arrow */
+
+.submit-button span {
+    margin-left: 15px;
+}
+
+
+/* Hover */
+
+.submit-button:hover {
+    background-color: transparent;
+
+    color: #1d1d1d;
+}
