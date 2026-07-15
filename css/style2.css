@@ -642,3 +642,202 @@ nav ul li a:hover::after {
 
     display: block;
 }
+/* =================================
+   SOCIAL CONNECT SECTION
+================================= */
+
+.social-connect {
+    padding: 70px 70px;
+
+    background-color: #f5f2eb;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 100px;
+}
+
+
+/* =================================
+   LEFT SIDE
+================================= */
+
+.social-label {
+    margin-bottom: 25px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #9b8265;
+}
+
+
+.social-connect-content h2 {
+    margin-bottom: 35px;
+
+    font-size: clamp(55px, 6vw, 90px);
+    font-weight: 400;
+
+    line-height: 0.95;
+    letter-spacing: -5px;
+
+    color: #1d1d1d;
+}
+
+
+.social-description {
+    max-width: 450px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #666666;
+}
+
+
+/* =================================
+   RIGHT SIDE - SOCIAL CARDS
+================================= */
+
+.social-cards {
+    border-top: 1px solid #aaa;
+}
+
+
+.social-card {
+    min-height: 220px;
+
+    padding: 35px;
+
+    border-bottom: 1px solid #aaa;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: #1d1d1d;
+
+    text-decoration: none;
+
+    transition: all 0.4s ease;
+}
+
+
+/* Top Part */
+
+.social-card > div {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* Platform Name */
+
+.social-card p {
+    font-size: 22px;
+    font-weight: 600;
+    
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+/* Large Social Icon */
+
+.social-card i {
+    font-size: 55px;
+}
+
+
+/* Bottom Link */
+
+.social-card > span {
+    font-size: 20px;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* =================================
+   HOVER EFFECT
+================================= */
+
+.social-card:hover {
+    padding-left: 50px;
+
+    background-color: #1d1d1d;
+
+    color: #ffffff;
+}
+
+
+.social-card:hover > span {
+    transform: translateX(10px);
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .social-connect {
+        padding: 80px 30px;
+
+        grid-template-columns: 1fr;
+
+        gap: 70px;
+    }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+    .social-connect {
+        padding: 80px 20px;
+
+        gap: 60px;
+    }
+
+
+    .social-connect-content h2 {
+        font-size: 50px;
+
+        letter-spacing: -3px;
+    }
+
+
+    .social-card {
+        min-height: 180px;
+
+        padding: 25px 10px;
+    }
+
+
+    .social-card i {
+        font-size: 40px;
+    }
+
+
+    .social-card > span {
+        font-size: 17px;
+    }
+
+
+    .social-card:hover {
+        padding-left: 20px;
+    }
+}
