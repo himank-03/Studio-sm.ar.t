@@ -455,7 +455,7 @@ nav ul li a:hover::after {
 
 .team{
 
-    padding:120px 70px;
+    padding:95px 70px;
 
     background:#ffffff;
 }
@@ -672,4 +672,192 @@ nav ul li a:hover::after {
     color:#ffffff;
 
     border-color:#1d1d1d;
+}
+
+@media(max-width:768px){
+
+.team{
+
+    padding:80px 20px;
+}
+
+.team-heading{
+
+    margin-bottom:50px;
+}
+
+.team-heading h2{
+
+    font-size:48px;
+
+    letter-spacing:-3px;
+}
+
+.team-intro{
+
+    font-size:15px;
+}
+
+.team-card{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    padding:25px;
+
+    gap:30px;
+}
+
+.team-image{
+
+    width:100%;
+
+    height:350px;
+}
+
+.team-content h3{
+
+    font-size:30px;
+}
+
+.team-quote{
+
+    font-size:18px;
+}
+
+}
+/*=================================
+        ABOUT CTA
+=================================*/
+
+.about-cta{
+
+    background:#1d1d1d;
+
+    color:#ffffff;
+
+    padding:150px 70px;
+
+    text-align:center;
+}
+
+/* Small Label */
+
+.cta-label{
+
+    margin-bottom:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    color:#b5a48d;
+}
+
+/* Heading */
+
+.about-cta h2{
+
+    font-size:clamp(70px,8vw,120px);
+
+    font-weight:400;
+
+    line-height:.95;
+
+    letter-spacing:-5px;
+
+    margin-bottom:35px;
+}
+
+/* Description */
+
+.cta-description{
+
+    max-width:650px;
+
+    margin:0 auto 60px;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    color:#bdbdbd;
+}
+
+/* Link */
+
+.cta-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding-bottom:10px;
+
+    border-bottom:1px solid #666666;
+
+    text-decoration:none;
+
+    color:#ffffff;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    transition:.3s;
+}
+
+.cta-link span{
+
+    transition:.3s;
+}
+
+.cta-link:hover{
+
+    color:#b5a48d;
+
+    border-color:#b5a48d;
+}
+
+.cta-link:hover span{
+
+    transform:translateX(8px);
+}
+@media(max-width:768px){
+
+.about-cta{
+
+    padding:90px 25px;
+}
+
+.about-cta h2{
+
+    font-size:55px;
+
+    letter-spacing:-3px;
+}
+
+.cta-description{
+
+    font-size:15px;
+
+    margin-bottom:40px;
+}
+
+.cta-link{
+
+    font-size:12px;
+}
+
 }
