@@ -1065,3 +1065,18 @@ nav ul li a:hover::after {
         gap: 12px;
     }
 }
+.cities{
+    margin-bottom: 20px;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+    
+    color: #555555;
+}
